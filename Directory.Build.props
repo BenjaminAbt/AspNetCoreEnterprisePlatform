@@ -1,0 +1,20 @@
+<Project>
+    <PropertyGroup>
+        <Authors>Benjamin Abt</Authors>
+        <Company>Benjamin Abt</Company>
+        <Product>BenjaminAbt.MyDemoPlatform</Product>
+        <IsPackable>false</IsPackable>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <LangVersion>preview</LangVersion>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <!-- https://docs.microsoft.com/en-us/nuget/consume-packages/package-references-in-project-files
+        deactivated because lock files are still crap
+        <RestoreLockedMode>true</RestoreLockedMode>
+        <RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>-->
+    </PropertyGroup>
+</Project>

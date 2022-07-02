@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <FrameworkReference Include="Microsoft.AspNetCore.App" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\BenjaminAbt.MyDemoPlatform.Features.AspNetCore.Abstractions\BenjaminAbt.MyDemoPlatform.Features.AspNetCore.Abstractions.csproj" />
+    </ItemGroup>
+
+</Project>

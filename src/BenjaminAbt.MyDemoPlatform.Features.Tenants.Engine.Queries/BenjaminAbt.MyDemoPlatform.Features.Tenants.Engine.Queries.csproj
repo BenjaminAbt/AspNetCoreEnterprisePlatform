@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BenjaminAbt.MyDemoPlatform.Engine.Abstractions\BenjaminAbt.MyDemoPlatform.Engine.Abstractions.csproj" />
+    <ProjectReference Include="..\BenjaminAbt.MyDemoPlatform.Features.Tenants.Models\BenjaminAbt.MyDemoPlatform.Features.Tenants.Models.csproj" />
+    <ProjectReference Include="..\BenjaminAbt.MyDemoPlatform.Models\BenjaminAbt.MyDemoPlatform.Models.csproj" />
+  </ItemGroup>
+
+</Project>

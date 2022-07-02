@@ -1,0 +1,12 @@
+{
+    "profiles": {
+        "BenjaminAbt.MyDemoPlatform.HttpApi": {
+            "commandName": "Project",
+            "environmentVariables": {
+                "ASPNETCORE_ENVIRONMENT": "Development"
+            },
+            "applicationUrl": "https://localhost:9700",
+            "dotnetRunMessages": true
+        }
+    }
+}
