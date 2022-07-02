@@ -33,6 +33,12 @@ jobs:
         with:
           dotnet-version: ${{ env.DOTNET_VERSION }}
 
+      - name: .NET Restore
+        run: dotnet restore --configfile NuGet.config
+
+      - name: .NET Tool Restore
+        run: dotnet tool restore
+
       - name: Versioning
         uses: dotnet/nbgv@master
         id: nbgv
