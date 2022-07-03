@@ -101,18 +101,6 @@
           }
         }
       }
-    },
-    "/": {
-      "get": {
-        "tags": [
-          "Test"
-        ],
-        "responses": {
-          "200": {
-            "description": "Success"
-          }
-        }
-      }
     }
   },
   "components": {

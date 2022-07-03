@@ -61,13 +61,6 @@ paths:
             text/json:
               schema:
                 $ref: '#/components/schemas/GuidObjectResult'
-  /:
-    get:
-      tags:
-        - Test
-      responses:
-        '200':
-          description: Success
 components:
   schemas:
     CollectionResultMetadata:
