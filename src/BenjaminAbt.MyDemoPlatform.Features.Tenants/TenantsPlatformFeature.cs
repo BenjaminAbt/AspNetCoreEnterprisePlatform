@@ -70,6 +70,8 @@ public class TenantsPlatformFeature : MyDemoPlatformPlatformFeature<TenantsPlatf
         // register engine
         TenantsEngineRegistration.Register(services);
     }
+
+    
 }
 
 public static class TenantsEngineRegistration

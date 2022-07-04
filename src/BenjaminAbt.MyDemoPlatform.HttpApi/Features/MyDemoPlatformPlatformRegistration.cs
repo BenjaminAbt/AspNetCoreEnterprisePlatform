@@ -6,6 +6,7 @@ using BenjaminAbt.MyDemoPlatform.Authentication.AspNetCore;
 using BenjaminAbt.MyDemoPlatform.Authentication.AspNetCore.Binders;
 using BenjaminAbt.MyDemoPlatform.Engine;
 using BenjaminAbt.MyDemoPlatform.Features.Tenants.AspNetCore;
+using BenjaminAbt.MyDemoPlatform.Features.Todos.AspNetCore;
 using BenjaminAbt.MyDemoPlatform.HttpApi.Sdk;
 using BenjaminAbt.MyDemoPlatform.Models.AspNetCore;
 using BenjaminAbt.MyDemoPlatform.Models.AspNetCore.Projections;
@@ -52,6 +53,7 @@ public static class MyDemoPlatformPlatformRegistration
         {
             // register parts
             partBuilder.Register(services, new TenantsFeaturePart(configuration.GetSection("TenantsFeature")));
+            partBuilder.Register(services, new TodoPart(configuration.GetSection("TodoFeature")));
         }
         catch (Exception e)
         {

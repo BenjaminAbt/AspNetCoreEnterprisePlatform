@@ -61,6 +61,13 @@ paths:
             text/json:
               schema:
                 $ref: '#/components/schemas/GuidObjectResult'
+  /todo:
+    get:
+      tags:
+        - Todo
+      responses:
+        '200':
+          description: Success
 components:
   schemas:
     CollectionResultMetadata:

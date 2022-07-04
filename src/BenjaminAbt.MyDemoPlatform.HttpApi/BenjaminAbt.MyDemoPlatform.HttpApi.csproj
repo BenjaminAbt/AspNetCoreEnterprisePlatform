@@ -35,6 +35,7 @@
         <ProjectReference Include="..\BenjaminAbt.MyDemoPlatform.Authentication.AspNetCore\BenjaminAbt.MyDemoPlatform.Authentication.AspNetCore.csproj" />
         <ProjectReference Include="..\BenjaminAbt.MyDemoPlatform.Engine\BenjaminAbt.MyDemoPlatform.Engine.csproj" />
         <ProjectReference Include="..\BenjaminAbt.MyDemoPlatform.Features.Tenants.AspNetCore\BenjaminAbt.MyDemoPlatform.Features.Tenants.AspNetCore.csproj" />
+        <ProjectReference Include="..\BenjaminAbt.MyDemoPlatform.Features.Todos.AspNetCore\BenjaminAbt.MyDemoPlatform.Features.Todos.AspNetCore.csproj" />
     </ItemGroup>
 
     <ItemGroup>

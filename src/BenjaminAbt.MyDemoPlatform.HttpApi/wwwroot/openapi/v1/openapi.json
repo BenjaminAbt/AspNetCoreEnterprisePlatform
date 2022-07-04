@@ -101,6 +101,18 @@
           }
         }
       }
+    },
+    "/todo": {
+      "get": {
+        "tags": [
+          "Todo"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
     }
   },
   "components": {
