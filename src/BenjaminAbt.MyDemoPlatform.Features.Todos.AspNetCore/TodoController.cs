@@ -9,6 +9,6 @@ namespace BenjaminAbt.MyDemoPlatform.Features.Todos.AspNetCore;
 public class TodoController:Controller
 
 {
-    [Route("todo")]
+    [Route("api/todo")]
     public IActionResult Todo() => Content("Todo");
 }
