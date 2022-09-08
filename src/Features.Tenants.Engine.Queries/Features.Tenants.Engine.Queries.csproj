@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <RootNamespace>BenjaminAbt.MyDemoPlatform.Features.Tenants.Engine.Queries</RootNamespace>
+        <AssemblyName>BenjaminAbt.MyDemoPlatform.Features.Tenants.Engine.Queries</AssemblyName>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Engine.Abstractions\Engine.Abstractions.csproj" />
+        <ProjectReference Include="..\Features.Tenants.Models\Features.Tenants.Models.csproj" />
+        <ProjectReference Include="..\Models\Models.csproj" />
+    </ItemGroup>
+
+</Project>

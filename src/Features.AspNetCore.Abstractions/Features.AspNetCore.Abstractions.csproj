@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <RootNamespace>BenjaminAbt.MyDemoPlatform.Features.AspNetCore.Abstractions</RootNamespace>
+        <AssemblyName>BenjaminAbt.MyDemoPlatform.Features.AspNetCore.Abstractions</AssemblyName>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <FrameworkReference Include="Microsoft.AspNetCore.App" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="AutoMapper" Version="11.0.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Authorization\Authorization.csproj" />
+        <ProjectReference Include="..\Features\Features.csproj" />
+    </ItemGroup>
+
+</Project>

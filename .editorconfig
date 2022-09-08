@@ -25,6 +25,8 @@ dotnet_style_operator_placement_when_wrapping = beginning_of_line
 # C# files
 [*.cs]
 
+file_header_template = Copyright © BEN ABT (www.benjamin-abt.com) 2021-2022 - all rights reserved
+
 #### .NET Coding Conventions ####
 
 # Organize usings

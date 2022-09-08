@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <RootNamespace>BenjaminAbt.MyDemoPlatform.Features.Tenants.AspNetCore</RootNamespace>
+        <AssemblyName>BenjaminAbt.MyDemoPlatform.Features.Tenants.AspNetCore</AssemblyName>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <FrameworkReference Include="Microsoft.AspNetCore.App" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="AutoMapper" Version="11.0.1" />
+        <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\AspNetCore\AspNetCore.csproj" />
+        <ProjectReference Include="..\Authentication.AspNetCore\Authentication.AspNetCore.csproj" />
+        <ProjectReference Include="..\Authentication\Authentication.csproj" />
+        <ProjectReference Include="..\Authorization.AspNetCore\Authorization.AspNetCore.csproj" />
+        <ProjectReference Include="..\Features.AspNetCore.Abstractions\Features.AspNetCore.Abstractions.csproj" />
+        <ProjectReference Include="..\Features.Tenants.Authorization\Features.Tenants.Authorization.csproj" />
+        <ProjectReference Include="..\Features.Tenants\Features.Tenants.csproj" />
+        <ProjectReference Include="..\HttpApi.Sdk\HttpApi.Sdk.csproj" />
+    </ItemGroup>
+
+</Project>

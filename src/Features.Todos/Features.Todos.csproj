@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <RootNamespace>BenjaminAbt.MyDemoPlatform.Features.Todos</RootNamespace>
+        <AssemblyName>BenjaminAbt.MyDemoPlatform.Features.Todos</AssemblyName>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Features.Abstractions\Features.Abstractions.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Database.SqlServer.Logging\Database.SqlServer.Logging.csproj" />
+        <ProjectReference Include="..\Database.SqlServer\Database.SqlServer.csproj" />
+        <ProjectReference Include="..\Engine\Engine.csproj" />
+        <ProjectReference Include="..\Features.Tenants.Engine.Commands\Features.Tenants.Engine.Commands.csproj" />
+        <ProjectReference Include="..\Features.Tenants.Engine.Queries\Features.Tenants.Engine.Queries.csproj" />
+        <ProjectReference Include="..\Features.Tenants.Models\Features.Tenants.Models.csproj" />
+        <ProjectReference Include="..\Features\Features.csproj" />
+        <ProjectReference Include="..\Models.EntityFramework\Models.EntityFramework.csproj" />
+        <ProjectReference Include="..\Models\Models.csproj" />
+    </ItemGroup>
+
+</Project>

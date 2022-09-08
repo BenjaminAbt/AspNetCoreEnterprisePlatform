@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <RootNamespace>BenjaminAbt.MyDemoPlatform.Engine.Abstractions</RootNamespace>
+        <AssemblyName>BenjaminAbt.MyDemoPlatform.Engine.Abstractions</AssemblyName>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="MediatR" Version="10.0.1" />
+    </ItemGroup>
+
+</Project>

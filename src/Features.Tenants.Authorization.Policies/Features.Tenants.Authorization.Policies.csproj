@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <RootNamespace>BenjaminAbt.MyDemoPlatform.Features.Tenants.Authorization.Policies</RootNamespace>
+        <AssemblyName>BenjaminAbt.MyDemoPlatform.Features.Tenants.Authorization.Policies</AssemblyName>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="System.ServiceModel.Security" Version="4.10.0" />
+    </ItemGroup>
+
+</Project>

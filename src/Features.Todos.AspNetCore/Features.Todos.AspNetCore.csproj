@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+    </PropertyGroup>
+
+
+    <PropertyGroup>
+        <RootNamespace>BenjaminAbt.MyDemoPlatform.Features.Todos.AspNetCore</RootNamespace>
+        <AssemblyName>BenjaminAbt.MyDemoPlatform.Features.Todos.AspNetCore</AssemblyName>
+    </PropertyGroup>
+
+
+    <ItemGroup>
+        <FrameworkReference Include="Microsoft.AspNetCore.App" />
+    </ItemGroup>
+
+
+    <ItemGroup>
+        <ProjectReference Include="..\Features.AspNetCore.Abstractions\Features.AspNetCore.Abstractions.csproj" />
+        <ProjectReference Include="..\Features.Todos\Features.Todos.csproj" />
+    </ItemGroup>
+
+</Project>

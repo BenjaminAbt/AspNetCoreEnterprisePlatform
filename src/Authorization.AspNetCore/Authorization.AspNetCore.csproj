@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <RootNamespace>BenjaminAbt.MyDemoPlatform.Authorization.AspNetCore</RootNamespace>
+        <AssemblyName>BenjaminAbt.MyDemoPlatform.Authorization.AspNetCore</AssemblyName>
+    </PropertyGroup>
+
+</Project>
