@@ -11,7 +11,7 @@ on:
 env:
   BuildConfig: Release
   DOTNET_SKIP_FIRST_TIME_EXPERIENCE: true
-  DOTNET_VERSION: '6.0.301'  # https://dotnetcli.blob.core.windows.net/dotnet/release-metadata/6.0/releases.json
+  DOTNET_VERSION: '6.0.100'  # https://dotnetcli.blob.core.windows.net/dotnet/release-metadata/6.0/releases.json
   SOLUTION_FILE: 'BenjaminAbt.AspDemoPlatform.sln'
 
 jobs:
@@ -51,7 +51,7 @@ jobs:
         run: dotnet build $(SOLUTION_FILE) -c Release --no-restore
 
       - name: Build Database Tenants
-        run: dotnet build src/BenjaminAbt.MyDemoPlatform.Features.Tenants.Database.SqlServer.Migrations/BenjaminAbt.MyDemoPlatform.Features.Tenants.Database.SqlServer.Migrations.csproj -c Release --no-restore
+        run: dotnet build src/Features.Tenants.Database.SqlServer.Migrations/Features.Tenants.Database.SqlServer.Migrations.csproj -c Release --no-restore
 
       - name: Test with dotnet
         run: dotnet test -c Release --no-restore --no-build /p:CollectCoverage=true
