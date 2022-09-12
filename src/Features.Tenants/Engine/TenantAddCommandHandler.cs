@@ -1,4 +1,4 @@
-// Copyright © BEN ABT (www.benjamin-abt.com) 2021-2022 - all rights reserved
+// Copyright Â© BEN ABT (www.benjamin-abt.com) 2021-2022 - all rights reserved
 
 using System.Threading;
 using System.Threading.Tasks;
@@ -36,7 +36,7 @@ public class TenantAddCommandHandler : ICommandHandler<TenantAddCommand, Platfor
         TenantEntity tenantEntity = new(platformTenantId, tenantName);
 
         // add tenant to context
-        _tenantsRepository.Add(tenantEntity);
+        await _tenantsRepository.Add(tenantEntity).ConfigureAwait(false);
 
         // save changes
         DbSaveChangesResult saveChangesResult = await _dbContext

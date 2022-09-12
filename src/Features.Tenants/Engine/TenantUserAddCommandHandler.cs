@@ -1,4 +1,4 @@
-// Copyright © BEN ABT (www.benjamin-abt.com) 2021-2022 - all rights reserved
+// Copyright Â© BEN ABT (www.benjamin-abt.com) 2021-2022 - all rights reserved
 
 using System;
 using System.Threading;
@@ -56,13 +56,13 @@ public class TenantUserAddCommandHandler : ICommandHandler<TenantUserAddCommand,
             userEntity = new(PlatformGuidFactory<PlatformUserId>.Create(), userName, now);
 
             // add user to context
-            _userAccountsRepository.Add(userEntity);
+            await _userAccountsRepository.Add(userEntity);
 
             // create association from user to tenant
             TenantUserAccountAssociationEntity userTenantAssociation =
                 new(Guid.NewGuid(), tenantEntity, userEntity, now);
 
-            _tenantUserAccountAssociationRepository.Add(userTenantAssociation);
+            await _tenantUserAccountAssociationRepository.Add(userTenantAssociation);
         }
         // check if user is already in tenant
         else
