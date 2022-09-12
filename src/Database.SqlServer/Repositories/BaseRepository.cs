@@ -19,20 +19,9 @@ public abstract class BaseRepository<T> where T : BaseEntity
         EntitySet = DbContext.Set<T>();
     }
 
-    public ValueTask<EntityEntry<T>> Add(T entity)
-    {
-        return EntitySet.AddAsync(entity);
-    }
+    public ValueTask<EntityEntry<T>> Add(T entity) => EntitySet.AddAsync(entity);
 
-    public T Attach(T entity)
-    {
-        DbContext.Attach(entity);
-        return entity;
-    }
+    public EntityEntry<T> Attach(T entity) => EntitySet.Attach(entity);
 
-    public T Delete(T entity)
-    {
-        DbContext.Delete(entity);
-        return entity;
-    }
+    public EntityEntry<T> Delete(T entity) => EntitySet.Remove(entity);
 }
