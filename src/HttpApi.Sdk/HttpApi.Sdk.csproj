@@ -1,7 +1,7 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>net6.0</TargetFramework>
+        <TargetFramework>net7.0</TargetFramework>
     </PropertyGroup>
 
     <PropertyGroup>
@@ -18,8 +18,8 @@
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="FluentValidation" Version="11.2.1" />
+        <PackageReference Include="FluentValidation" Version="11.2.2" />
         <PackageReference Include="System.Linq" Version="4.3.0" />
-        <PackageReference Include="System.Text.Json" Version="6.0.5" />
+        <PackageReference Include="System.Text.Json" Version="7.0.0" />
     </ItemGroup>
 </Project>
