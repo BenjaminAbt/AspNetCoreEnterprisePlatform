@@ -1,5 +1,6 @@
-// Copyright © BEN ABT (www.benjamin-abt.com) 2021-2022 - all rights reserved
+// Copyright Â© BEN ABT (www.benjamin-abt.com) 2021-2022 - all rights reserved
 
+using System.Reflection;
 using BenjaminAbt.MyDemoPlatform.Engine.Abstractions;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
@@ -14,7 +15,8 @@ public static class MediatorDispatcherDependencyInjection
     /// </summary>
     public static IServiceCollection AddEngine(this IServiceCollection services)
     {
-        services.AddMediatR(typeof(MediatorDispatcherDependencyInjection));
+        Assembly currentAssembly = typeof(MediatorDispatcherDependencyInjection).Assembly;
+        services.AddMediatR(config => config.RegisterServicesFromAssembly(currentAssembly));
         services.TryAddScoped<IEventDispatcher, MediatorDispatcher>(); // only add if not exists!
 
         return services;

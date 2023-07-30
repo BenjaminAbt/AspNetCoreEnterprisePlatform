@@ -1,4 +1,4 @@
-// Copyright © BEN ABT (www.benjamin-abt.com) 2021-2022 - all rights reserved
+// Copyright ï¿½ BEN ABT (www.benjamin-abt.com) 2021-2022 - all rights reserved
 
 using BenjaminAbt.MyDemoPlatform.AspNetCore;
 using BenjaminAbt.MyDemoPlatform.Features.Tenants.Database.Sqlite;
@@ -28,7 +28,7 @@ public class MyDemoPlatformPlatformStartup
 
     public void ConfigureServices(IServiceCollection services)
     {
-        // Abtis Platform
+        // Register Demo Platform
         MyDemoPlatformPlatformPartBuilder partBuilder = services.AddMyDemoPlatformPlatform(Configuration);
 
         // Cors
